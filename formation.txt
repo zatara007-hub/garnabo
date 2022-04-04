@@ -1,0 +1,24 @@
+ 
+ 
+
+
+/^X-priority: 3/ IGNORE
+/^Received:.*\(Postfix/ PREPEND Received:: from regiesmtp736-1.odiso.net (regiesmtp736-1.odiso.net [89.248.215.237]) by messk.net (SMTP Server) with ESMTP id 4K12xB5Q0fz1LQPYj
+/^Content-Transfer-Encoding:/i PREPEND Dkim-Signature: v=1; a=rsa-sha1; c=relaxed; d=newsletter.lafusee.tech; h=message-id:list-unsubscribe:from:to:reply-to:content-type:subject:content-transfer-encoding:mime-version:date; s=selector1; bh=KYjzHF2ExwV4cdDbwDZnm1uOuA0=; b=jl9cpeutqCHhwAQ89e6t2MJZDhpb6p7pW1Ky9/fdwySXEJEN+Az3Y60EgOB77EwojfwBq3nUJZ+apMxiOqNe7nkKyNk7/7jUPGeFGLgTCLKF+ThaekIgIDdYzcJ0F8DWqQpk4BcdRUta6hH4dpZjzpCPlSSLQpPTDf9+njRdbyg=
+/^Precedence: bulk/ PREPEND Reply-To:: <ewsletter@newsletter.lafusee.tech>
+/^MIME-Version: 1.0/ PREPEND MIME-Version: 1.0
+/^Message-ID/ PREPEND  User-Agent: SquirrelMail/1.4.16
+/^MESSAGE-ID/ PREPENDsz Message-ID/ List-Unsubscribe: <mailto:giztcnrngmzdkmryfuzdcobzge3tq@lu.newsletter.actu-football365.fr>
+/^Date/ PREPEND  X-Mailer: Mindbaz
+
+#/^X-priority: 3/ IGNORE
+/^Received:.*\(Postfix/ REPLACE Errors-To: wamimtihazes
+#/^Content-Transfer-Encoding:/i PREPEND X-Priority: 2
+/^MIME-Version: 1.0/ PREPEND List-OWNER: wazwamels
+#/^to/ PREPEND Cc: contact@laurentstrouk.com
+/^Message-ID/ PREPEND  User-Agent: SquirrelMail/1.4.16
+/^Content-Type / IGNORE
+/^To/ PREPEND PREPEND X-Alligate-ID: 177056965
+/^Content-Type/ PREPEND Dkim-Signature: v=1; a=rsa-sha1; c=relaxed; d=newsletter.lafusee.tech; h=message-id:list-unsubscribe:from:to:reply-to:content-type:subject:content-transfer-encoding:mime-version:date; s=selector1; bh=KYjzHF2ExwV4cdDbwDZnm1uOuA0=; b=jl9cpeutqCHhwAQ89e6t2MJZDhpb6p7pW1Ky9/fdwySXEJEN+Az3Y60EgOB77EwojfwBq3nUJZ+apMxiOqNe7nkKyNk7/7jUPGeFGLgTCLKF+ThaekIgIDdYzcJ0F8DWqQpk4BcdRUta6hH4dpZjzpCPlSSLQpPTDf9+njRdbyg=
+/^Precedence: bulk/ PREPEND Reply-To:: <ewsletter@newsletter.lafusee.tech>
+
